@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="DALL .png" type="image/x-icon">
+    <title>تشفير وفك تشفير النصوص</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <button onclick="toggleMenu()">☰</button>
+            <div id="menuOptions" class="hidden">
+                <p><a href="#" onclick="showExplanation()">شرح الموقع</a></p>
+                <p><a href="#" onclick="showUsage()">كيفية الاستخدام</a></p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>تشفير وفك تشفير النصوص</h1>
+        
+        <!-- نص مشفر -->
+        <textarea id="inputText" placeholder="أدخل النص المشفر أو العادي هنا"></textarea><br>
+
+        <div class="button-container">
+            <button onclick="encrypt()">تشفير</button>
+            <button onclick="decrypt()">فك التشفير</button>
+            <button onclick="copyOutput()">نسخ النص</button>
+        </div>
+
+        <p>النص الناتج:</p>
+        <textarea id="outputText" readonly></textarea><br>
+
+        <p>النص المفكك التشفير:</p>
+        <textarea id="decryptedText" readonly></textarea><br>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
